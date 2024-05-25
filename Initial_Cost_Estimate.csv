@@ -1,0 +1,18 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,8387.359999999999,100648.32,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Initial_Cost_Estimate,US East (N. Virginia),Assuming constant usage and 10TB of data transfer per month.,Network Address Translation (NAT) Gateway,0,515.7,6188.40,USD,,Number of NAT Gateways (2)
+Initial_Cost_Estimate,US East (N. Virginia),Assuming 50TB data transfer and 50 million requests,Amazon CloudFront,0,4121.2,49454.40,USD,,"Data transfer out to internet (50000 GB per month), Number of requests (HTTPS) (50000000 per month), Data transfer out to origin (1000 GB per month)"
+Initial_Cost_Estimate,US East (N. Virginia),"t3.medium: 20 request/sec. Web server 30 instances, app server 30 instances",Amazon EC2 ,0,788.4,9460.80,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 60), Advance EC2 instance (t3.medium), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Initial_Cost_Estimate,US East (N. Virginia),DB Servers: ～426.56 requests/second,Amazon EC2 ,0,2345.2058,28142.47,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (m6i.8xlarge), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), EBS Storage amount (5000 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (1 TB per month)"
+Initial_Cost_Estimate,US East (N. Virginia)," Assuming 2 Application Load Balancers (one for web, one for application servers)",Application Load Balancer,0,616.85,7402.20,USD,,Number of Application Load Balancers (2)
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."

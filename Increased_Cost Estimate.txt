@@ -1,0 +1,3 @@
+In the case cost of 20k USD per month, I will revise the architecture to add disaster recovery in the US East (Ohio) region. 
+This will increase the cost of infra in the second region and the cost of route 53, the cost of sync-up data to the US East (Ohio) region.
+In addition, I will upgrade DB server to m6i.12xlarge, and update EBS from General Purpose SSD (gp2) to Provisioned IOPS SSD (io2) instance to increase performance for the entire system.

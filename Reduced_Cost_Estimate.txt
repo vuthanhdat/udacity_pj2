@@ -1,0 +1,4 @@
+Assuming the system handles about 600 requests per second, it is using 30 ec2s, each ec2 processing 20 requests per second. 
+To reduce costs, we will reduce the number of ec2 of the web server and application server by half. 
+Similarly, the number of requests per second decreases, so the DB will switch to using m6i.2xlarge and reduce storage to 2000gb. 
+This reduction will reduce system performance but operation will still be stable.
