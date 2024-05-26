@@ -1,16 +1,19 @@
 ﻿Estimate summary
 Upfront cost,Monthly cost,Total 12 months cost,Currency
-0,6450.23,77402.76,USD
+0,6191.349999999999,74296.20,USD
 ,,* Includes upfront cost
 
 
 Detailed Estimate
 Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
-Initial_Cost_Estimate,US East (N. Virginia),Assuming constant usage and 10TB of data transfer per month.,Network Address Translation (NAT) Gateway,0,515.7,6188.40,USD,,Number of NAT Gateways (2)
-Initial_Cost_Estimate,US East (N. Virginia),Assuming 50TB data transfer and 50 million requests,Amazon CloudFront,0,4121.2,49454.40,USD,,"Data transfer out to internet (50000 GB per month), Number of requests (HTTPS) (50000000 per month), Data transfer out to origin (1000 GB per month)"
-Initial_Cost_Estimate,US East (N. Virginia),"t3.medium: 20 request/sec. Web server 30 instances, app server 30 instances",Amazon EC2 ,0,394.2,4730.40,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 30), Advance EC2 instance (t3.medium), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
-Initial_Cost_Estimate,US East (N. Virginia),DB Servers: ～426.56 requests/second,Amazon EC2 ,0,802.2828,9627.39,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (m6i.2xlarge), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), EBS Storage amount (2000 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (1 TB per month)"
-Initial_Cost_Estimate,US East (N. Virginia)," Assuming 2 Application Load Balancers (one for web, one for application servers)",Application Load Balancer,0,616.85,7402.20,USD,,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,VPN Connection,0,36.5,438.00,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (1)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,515.7,6188.40,USD,,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,2496.2,29954.40,USD,,"Data transfer out to internet (30000 GB per month), Data transfer out to origin (1000 GB per month), Number of requests (HTTPS) (25000000 per month)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,1451,17412.00,USD,,"S3 Standard storage (50000 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (10000000), GET, SELECT, and all other requests from S3 Standard (40000000), Data returned by S3 Select (50000 GB per month), Data scanned by S3 Select (100000 GB per month)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,,
+My Estimate,US East (N. Virginia),Web server and application server,Amazon EC2 ,0,394.2,4730.40,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 30), Advance EC2 instance (t3.medium), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),Master DB and replica DB,Amazon EC2 ,0,680.9028000000001,8170.83,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (m6i.2xlarge), Pricing strategy ( 3yr  No Upfront), Enable monitoring (enabled), EBS Storage amount (2000 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (5 TB per month)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,616.85,7402.20,USD,,Number of Application Load Balancers (2)
 
 
 
